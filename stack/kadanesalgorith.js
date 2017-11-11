@@ -7,9 +7,10 @@ function kadaneAlgorithm(arr){
         m_e_h+=arr[i];
         if(m_e_h<0) {
             m_e_h=0;
-            start=i+1;
+            s=i+1;
         }else if(m_e_h>m_s_f){
             m_s_f=m_e_h;
+            start=s;
             end=i;
         }
     }
